@@ -48,17 +48,17 @@ public class ShowClientState extends HttpServlet {
 					throw new Exception("state inconnu");
 				}
 				// Afficher les propriétés des clients	
-                                out.printf("<table style =\"width:100%\">");
-                                out.printf("<tr><th>Id</th><th>Name</th><th>Address</th></tr>");
+                                out.println("<table style =\"width:100%\">");
+                                out.println("<tr><th>Id</th><th>Name</th><th>Address</th></tr>");
                                  
                                 for(int i=0; i<listCustomer.size(); i++) {
-                                            out.printf("<tr>");
-                                            out.printf("<td>" + listCustomer.get(i).getCustomerId() + "</td>");
-                                            out.printf("<td>" + listCustomer.get(i).getName() + "</td>");
-                                            out.printf("<td>" + listCustomer.get(i).getAddressLine1() + "</td>");
-                                            out.printf("</tr>");
+                                            out.println("<tr>");
+                                            out.println("<td>" + listCustomer.get(i).getCustomerId() + "</td>");
+                                            out.println("<td>" + listCustomer.get(i).getName() + "</td>");
+                                            out.println("<td>" + listCustomer.get(i).getAddressLine1() + "</td>");
+                                            out.println("</tr>");
                                 }
-                                out.printf("</table>");
+                                out.println("</table>");
 			} catch (Exception e) {
 				out.printf("Erreur : %s", e.getMessage());
 			}
