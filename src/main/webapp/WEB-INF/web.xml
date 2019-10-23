@@ -12,6 +12,10 @@
         <servlet-name>ShowClientState</servlet-name>
         <servlet-class>com.mycompany.webappli.ShowClientState</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ShowClientStateFrom</servlet-name>
+        <servlet-class>com.mycompany.webappli.ShowClientStateFrom</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>NameServlet</servlet-name>
         <url-pattern>/NameServlet</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>ShowClientState</servlet-name>
         <url-pattern>/ShowClientState</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowClientStateFrom</servlet-name>
+        <url-pattern>/ShowClientStateFrom</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
